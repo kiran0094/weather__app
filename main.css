@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.bg-photo{
+    background-image: url("images/sky-web-background.jpg");
+    background-repeat:;
+    background-size:cover;
+  
+}
+.bg-colour{
+    background-image: linear-gradient(130deg,#337CCF,#279EFF);
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>weather</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="bg-white bg-photo">
+    <div class="flex justify-center">
+      <div
+        class="text-lg font-bold bg-colour w-[70%] my-[50px] rounded-3xl border border-black border-2"
+      >
+        <header class="flex mt-5">
+          <input
+            type="text"
+            placeholder=" enter the city name"
+            id="search"
+            class="rounded-2xl w-[70%] lg:ml-20"
+          />
+          <button>
+            <img
+              src="images/search.png"
+              alt="search"
+              class="lg:w-12 rounded-3xl w-8 bg-white ml-5"
+            />
+          </button>
+        </header>
+        <main class="flex justify-center">
+          <div id="weather">
+            <p class="text-center text-2xl underline pt-5" id="name"></p>
+            <img
+              alt="clouds"
+              src="images/drizzle.png"
+              id="img"
+              class="mb-0 pb-0 lg:h-36"
+            />
+            <p id="weather_text" class="text-center text-2xl font-semibold"></p>
+          </div>
+        </main>
+        <footer class="flex justify-between px-12 py-11 lg:px-32 font-normal">
+          <div>
+            <img
+              src="images/humidity.png"
+              alt=""
+              srcset=""
+              class="h-10 lg:h-16 mb-2"
+            />
+            <p class="text-center" id="humidity"></p>
+            <p>humidity</p>
+          </div>
+          <div>
+            <img
+              src="images/wind.png"
+              alt=""
+              srcset=""
+              class="h-10 lg:h-16 mb-2"
+            />
+            <p class="text-center" id="wind"></p>
+            <p>windspeed</p>
+          </div>
+        </footer>
+        <script src="action.js" type="module"></script>
+      </div>
+    </div>
+    <script src="action.js"></script>
+  </body>
+</html>
